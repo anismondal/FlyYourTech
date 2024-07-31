@@ -1,0 +1,2027 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <!-- CSS -->
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- AOS -->
+
+    <!-- FONTAWESOME -->
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
+    <!-- FONTAWESOME -->
+
+    <title>FYT - Fly Your Tech</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+
+
+
+    <header>
+      <div class="container flex-row">
+        <div class="header__logo">
+          <img src="assets/img/fyt-logo.png" alt="Logo" />
+        </div>
+      <nav>
+        <ul class="header__menu flex-row">
+          <li>
+            <a href="#hero">Home</a>
+          </li>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#services">Services</a>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#testimonial">Moto</a>
+          </li>
+          
+        </ul>
+      </nav>
+      <div class="right flex-center">
+        <!-- <a href="#contact" class="btn btn-secondary">Contact Us</a> -->
+        <a href="#contact">
+          <button class="nav-btn type1">
+            <span class="btn-txt">Contact Us</span>
+          </button>
+        </a>
+        <div class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+        
+      </div>
+
+<!-- CSS -->
+
+<style>
+@import url(https://fonts.googleapis.com/css?family=Overpass:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+/* VARIABLES */
+:root {
+    --primary-color: #c04ae2;
+    --secondary-color: #111111;
+    --primary-font: 'Poppins', sans-serif;
+    --secondary-font: 'Overpass', sans-serif;
+}
+
+/* RESET DEFAULT STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--secondary-font);
+    margin-bottom: 1rem;
+}
+
+/* UTILITY CLASSES */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-primary {
+    color: var(--primary-color);
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.btn {
+    display: inline-block;
+    max-width: max-content;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #a03dd1;
+}
+
+.btn-secondary {
+
+    border: 1px solid var(--primary-color);
+}
+
+.btn-secondary:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.section-subheading {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.section-heading {
+    font-size: 3rem;
+    max-width: 600px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+
+.section-heading.left {
+    margin-right: auto;
+}
+
+.section-heading.right {
+    margin-left: auto;
+}
+
+
+
+/* GLOBAL STYLES */
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: var(--primary-font);
+    font-size: 16px;
+    line-height: 1.5;
+    overflow-x: hidden;
+    color: var(--secondary-color);
+}
+
+section {
+    position: relative;
+    padding-top: 5rem !important;
+    padding-bottom: 5rem !important;
+
+}
+
+/* HEADER */
+
+header{
+    padding: 1rem 0;
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+}
+
+header.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.header__logo img {
+    width: 100px;
+}
+
+.header__menu {
+    gap: 1rem;
+}
+
+.header__menu li a {
+    font-size: 0.8rem;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.header__menu li a:hover {
+    color: var(--primary-color)
+}
+
+header .right {
+    gap: 1rem;
+}
+
+
+.menu-btn {
+    display: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+/* HERO */
+
+#hero{
+    min-height: 100vh;
+}
+
+.hero__content{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero__content h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.hero__content p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+
+.hero__img {
+    width: 60%;
+}
+
+
+
+
+
+/* ABOUT */
+.features{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.feature {
+    padding: 2rem;
+    border-radius: 8px;
+    border: 2px solid var(--color);
+}
+
+.feature__icon {
+    font-size: 2rem;
+    color: var(--color);
+    margin-bottom: 1rem;
+}
+
+
+.feature__title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.feature__text {
+    font-size: 0.9rem;
+}
+
+.about__details {
+    display: flex;
+    gap: 2rem;
+    margin-top: 5rem;
+}
+
+.about__details-content {
+    width: 50%;
+}
+
+.about__details-content h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.about__details-content p {
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.about__details-content .btn {
+    margin-top: 1rem;
+}
+
+.about__details-content .about-btn {
+    margin-top: 1rem;
+}
+
+.about__details-img {
+    width: 50%;
+}
+
+
+/* SERVICES */
+
+#services .section-subheading,
+#services .section-heading {
+    text-align: right;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.service {
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 8px;
+    background-color: #fff;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.service__icon img {
+    width: 50px;
+    margin-bottom: 1rem;
+}
+
+.services__title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.service__text {
+    font-size: 0.9rem;
+}
+
+.service .arrow-icon {
+    font-size: 1.2REM;
+    color: var(--primary-color);
+    margin-left: auto;
+    transition: transform 0.3s;
+}
+
+.service:hover .arrow-icon{
+    transform: translateX(5px);
+}
+
+
+
+/* Projects */
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    margin-top: 5rem;
+}
+
+.project {
+    display: flex;
+    gap: 10%;
+    align-items: center;
+}
+
+.project:nth-child(2) {
+    flex-direction: row-reverse;
+}
+
+.project__img {
+    min-width: 35%;
+}
+
+/* .project__img::after {
+    content: "";
+    position: absolute;
+    top: -20px;
+    width: 90%;
+    height: 90%;
+    border-radius: 8px;
+    z-index: -1;
+    border: 4px solid #f1e8ed;
+}
+
+.project:nth-child(1) .project__img::after, 
+.project:nth-child(3) .project__img::after
+{
+    left: -20px;
+}
+
+.project:nth-child(2) .project__img::after {
+    right: -20px;
+    border-color: #6bc2ed;
+}
+
+.project:nth-child(3) .project__img::after {
+    border-color: #fed440;
+} */
+
+.project__category {
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.project__title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.project__text {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+
+/* TEAM */
+
+.members {
+    display: flex;
+    gap: 3rem;
+}
+
+.member:nth-child(2),
+.member:nth-child(4) {
+    margin-top: 5rem;
+}
+
+.member__img {
+    margin-bottom: 1rem;
+}
+
+.member__content h1 {
+    margin-bottom: 0.25rem;
+}
+
+.member__content p {
+    opacity: 0.4;
+    font-weight: 600;
+}
+
+
+
+/* TESTIMONIALS */
+#testimonials {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+#testimonials .section-subheading {
+    margin-bottom: 2rem;
+}
+
+.testimonials-wrapper {
+    position: relative;
+    width: 70%;
+}
+
+.quotes {
+    position: absolute;
+    left: 0;
+    top: 15px;
+    font-size: 5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.testimonial__title {
+    font-size: 2rem;
+    padding-left: 6rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.testimonial__text {
+    opacity: 0.8;
+    margin-bottom: 3rem;
+}
+
+.testimonials__img img {
+    max-height: 500px;
+}
+
+.testimonial__author {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.testimonial__author h3 {
+    margin: 0;
+}
+
+.testimonial__author p {
+    color: rgb(95, 95, 95);
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.testimonial__author::before {
+    content: "";
+    width: 15px;
+    transform: translateY(-70%);
+    border-bottom: 1px solid #111111;
+}
+
+.testimonial-navigation {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.testimonial-navigation span {
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    background-color: var(--primary-color);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.testimonial-navigation span.active {
+    width: 30px;
+}
+
+/* CONTACT */
+.contact {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.contact__form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact__form input,
+.contact__form textarea {
+    padding: 1rem;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact__form textarea {
+    resize: vertical;
+}
+
+.contact__details {
+    width: 50%
+}
+
+.contact__details .text {
+    font-size: 0.9rem;
+    color: #2e2e2e;
+    margin-bottom: 2rem;
+}
+
+.contact__details .details {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact__details .detail {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.detail__icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 0.8rem;
+    background: #fe6686;
+}
+
+.detail:nth-child(2) .detail__icon {
+    background: #54d6a1;
+
+}
+.detail:nth-child(3) .detail__icon {
+    background: #fe9a3f;
+    
+}
+
+.detail__content h3 {
+    margin: 0;
+    line-height: 1;
+}
+
+.detail__content p {
+    color:#747474;
+    font-size: 0.9rem;
+}
+
+
+/* FOOTER */
+
+footer {
+    padding: 2rem 0;
+}
+
+.footer__content {
+    display: grid;
+    gap: 5rem;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+}
+
+.footer__logo {
+    width: 100px;
+    margin-bottom: 1rem;
+}
+
+.footer__text {
+    font-size: 0.9rem;
+    color: #747474;
+    margin-bottom: 1rem;
+}
+
+.footer__newletter {
+    position: relative;
+}
+
+.footer__newletter input {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background-color: #f3f9fb;
+    box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.footer__newletter .icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.3;
+}
+
+.footer__menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 0.8rem;
+    color: #747474;
+}
+
+.footer__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8rem;
+    color: #747474;
+    margin-top: 3rem;
+}
+
+
+
+.footer__bottom-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.facebook {
+    color: #3b5998;
+}
+
+.twitter {
+    color: #00acee;
+}
+
+.instagram {
+    color: #E4405f;
+}
+
+.facebook {
+    color: #0e76a8;
+}
+
+
+
+.animated-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 16px 36px;
+    border: 4px solid;
+    border-color: transparent;
+    font-size: 16px;
+    background-color: inherit;
+    border-radius: 100px;
+    font-weight: 600;
+    color: var(--primary-color);
+    box-shadow: 0 0 0 2px var(--primary-color);
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .animated-button svg {
+    position: absolute;
+    width: 24px;
+    fill: var(--primary-color);
+    z-index: 9;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .animated-button .arr-1 {
+    right: 16px;
+  }
+  
+  .animated-button .arr-2 {
+    left: -25%;
+  }
+  
+  .animated-button .circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .animated-button .text {
+    position: relative;
+    z-index: 1;
+    transform: translateX(-12px);
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .animated-button:hover {
+    box-shadow: 0 0 0 12px transparent;
+    color: #fff;
+    border-radius: 12px;
+  }
+  
+  .animated-button:hover .arr-1 {
+    right: -25%;
+  }
+  
+  .animated-button:hover .arr-2 {
+    left: 16px;
+  }
+  
+  .animated-button:hover .text {
+    transform: translateX(12px);
+  }
+  
+  .animated-button:hover svg {
+    fill: #fff;
+  }
+  
+  .animated-button:active {
+    scale: 0.95;
+    box-shadow: 0 0 0 4px var(--primary-color);
+  }
+  
+  .animated-button:hover .circle {
+    width: 220px;
+    height: 220px;
+    opacity: 1;
+  }
+  
+
+
+
+
+  .about-btn {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    padding-block: 0.5rem;
+    padding-inline: 1.25rem;
+    background-color: rgb(179, 149, 0);
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #ffff;
+    gap: 10px;
+    font-weight: bold;
+    border: 3px solid #ffffff4d;
+    outline: none;
+    overflow: hidden;
+    font-size: 15px;
+  }
+  
+  .icon {
+    width: 24px;
+    height: 24px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .about-btn:hover {
+    transform: scale(1.05);
+    border-color: #fff9;
+  }
+  
+  .about-btn:hover .icon {
+    transform: translate(4px);
+  }
+  
+  .about-btn:hover::before {
+    animation: shine 1.5s ease-out infinite;
+  }
+  
+  .about-btn::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background-image: linear-gradient(
+      120deg,
+      rgba(255, 255, 255, 0) 30%,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0) 70%
+    );
+    top: 0;
+    left: -100px;
+    opacity: 0.6;
+  }
+  
+  @keyframes shine {
+    0% {
+      left: -100px;
+    }
+  
+    60% {
+      left: 100%;
+    }
+  
+    to {
+      left: 100%;
+    }
+  }
+  
+
+
+
+  .contact-btn {
+    font-family: inherit;
+    font-size: 18px;
+    background: linear-gradient(to bottom, var(--primary-color) 0%, var(--primary-color) 100%);
+    color: white;
+    padding: 0.8em 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+  }
+  
+  .contact-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .contact-btn:active {
+    transform: scale(0.95);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .contact-btn span {
+    display: block;
+    margin-left: 0.4em;
+    transition: all 0.3s;
+  }
+  
+  .contact-btn svg {
+    width: 18px;
+    height: 18px;
+    fill: white;
+    transition: all 0.3s;
+  }
+  
+  .contact-btn .svg-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-right: 0.5em;
+    transition: all 0.3s;
+  }
+  
+  .contact-btn:hover .svg-wrapper {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  
+  .contact-btn:hover svg {
+    transform: rotate(45deg);
+  }
+
+
+
+
+
+  .nav-btn {
+    height: 50px;
+    width: 150px;
+    position: relative;
+    background-color: transparent;
+    cursor: pointer;
+    border: 2px solid #252525;
+    overflow: hidden;
+    border-radius: 30px;
+    color: #333;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  
+  .type1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 0.5s ease-in-out;
+    background-color: #333;
+    border-radius: 30px;
+    visibility: hidden;
+    height: 10px;
+    width: 10px;
+    z-index: -1;
+  }
+  
+  .nav-btn:hover {
+    box-shadow: 1px 1px 200px #252525;
+    color: #fff;
+    border: none;
+  }
+  
+  .type1:hover::after {
+    visibility: visible;
+    transform: scale(100) translateX(2px);
+  }
+
+
+
+
+  .projects-btn {
+    padding: 1em 2em;
+    border: none;
+    border-radius: 5px;
+    /* font-weight: bold; */
+    /* letter-spacing: 5px; */
+    /* text-transform: uppercase; */
+    cursor: pointer;
+    color: var(--primary-color);
+    transition: all 1000ms;
+    font-size: 15px;
+    position: relative;
+    overflow: hidden;
+    outline: 2px solid var(--primary-color);
+  }
+  
+  .projects-btn:hover {
+    color: #ffffff;
+    transform: scale(0.9);
+    outline: 1px solid var(--primary-color);
+    box-shadow: 4px 5px 17px -4px var(--primary-color);
+  }
+  
+  .projects-btn::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: var(--primary-color);
+    transform: skewX(45deg);
+    z-index: -1;
+    transition: width 1000ms;
+  }
+  
+  .projects-btn:hover::before {
+    width: 250%;
+  }
+
+
+  .footer__email {
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    padding: 1em;
+    background-color: #ccc;
+    box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
+    transition: 300ms ease-in-out;
+  }
+  
+  .footer__email:focus {
+    background-color: white;
+    transform: scale(1.05);
+    box-shadow: 13px 13px 100px #969696,
+               -13px -13px 100px #ffffff;
+  }
+
+
+
+  .footer__button {
+    cursor: pointer;
+    position: relative;
+    padding: 10px 24px;
+    font-size: 18px;
+    color: rgb(193, 163, 98);
+    border: 2px solid rgb(193, 163, 98);
+    border-radius: 34px;
+    background-color: transparent;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+    overflow: hidden;
+    margin-top: 15px;
+  }
+  
+  .footer__button::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: inherit;
+    scale: 0;
+    z-index: -1;
+    background-color: rgb(193, 163, 98);
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .footer__button:hover::before {
+    scale: 3;
+  }
+  
+  .footer__button:hover {
+    color: #212121;
+    scale: 1.1;
+    box-shadow: 0 0px 20px rgba(193, 163, 98,0.4);
+  }
+  
+  .footer__button:active {
+    scale: 1;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 768px) {
+
+    /* GLOBAL */
+
+    .container {
+        padding: 0 1rem;
+    }
+
+    section {
+        padding-top: 2rem !important;
+        padding-bottom: 3rem !important;
+    }
+
+    .section-heading {
+        font-size: 2rem;
+    }
+    
+    /* HEADER */
+
+    .header__menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        transform: translateX(-100%);
+        transition: transform 0.3s;
+    }
+
+    .header__menu.show {
+        transform: translateX(0);
+    }
+
+    .header__menu li {
+        margin: 1rem 0;
+    }
+
+    .menu-btn {
+        display: block;
+        z-index: 99;
+    }
+
+
+    /* HERO */
+
+    #hero {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .hero__content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero__content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero__content .btn {
+        margin: 0 auto;
+    }
+
+    .hero__content .animated-button {
+        margin: 0 auto;
+    }
+
+    .hero__img {
+        width: 100%;
+    }
+
+    /* ABOUT */
+
+    .features {
+        grid-template-columns: repeat(1fr);
+    }
+
+    .feature {
+        padding: 1rem;
+    }
+
+    .about__details {
+        flex-direction: column;
+    }
+
+    .about__details-content,
+    .about__details-img {
+        width: 100%;
+    }
+
+
+
+    /* PROJECTS */
+
+    .project {
+        flex-direction: column !important;
+        gap: 2rem;
+    }
+
+    .project__img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .project__title {
+        font-size: 1.5rem;
+    }
+    /* TEAM */
+
+    .members {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .member {
+        margin: 0 !important;
+    }
+
+    .member__img img {
+        max-width: 300px;
+    }
+
+
+
+    /* TESTIMONIALS */
+
+    .testimonials__img {
+        display: none;
+    }
+
+    .testimonials-wrapper {
+        width: 100%;
+    }
+
+    .testimonial {
+        background-size: 100%;
+    }
+
+
+    /* CONTACT */
+
+    .contact {
+        flex-direction: column;
+    }
+
+    .contact__form,
+    .contact__details {
+        width: 100%;
+    }
+    
+
+    /* FOOTER */
+
+    .footer__content {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .footer__bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
+
+
+
+</style>
+
+
+
+
+<!-- CSS -->
+
+<!-- JAVASCRIPT -->
+
+<script>
+  const header = document.querySelector("header");
+
+window.addEventListener("scroll", () => {
+    header.classList.toggle("sticky", window.scrollY > 0);
+})
+
+
+
+const headerMenu = document.querySelector(".header__menu"),
+    menuBtn = document.querySelector(".menu-btn"),
+    headerMenuItems = headerMenu.querySelectorAll("li a")
+
+menuBtn.addEventListener("click", () => {
+    headerMenu.classList.toggle("show")
+});
+
+headerMenuItems.forEach((item) => {
+    item.addEventListener("click", () => {
+        headerMenu.classList.remove("show")
+    });
+});
+
+</script>
+
+
+
+<!-- JAVASCRIPT -->
+
+
+
+
+    </header>
+
+
+    <!-- HEADER -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- HERO -->
+    <section id="hero" class="container flex-row">
+      <div class="hero__content">
+        <h1 class="title">Welcome to Fly Your Tech</h1>
+        <p class="text">
+          Where Imagination Meets Code Because at the intersection of creativity and technology, we’re rewriting the rules of gravity.
+        </p>
+        <!-- <a href="" class="btn btn-primary">Explore Now</a> -->
+        <a href="#about">
+          <button class="animated-button">
+            <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+              ></path>
+            </svg>
+            <span class="text">Explore Now</span>
+            <span class="circle"></span>
+            <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+              ></path>
+            </svg>
+          </button>
+        </a>
+      </div>
+        <div class="hero__img">
+          <img src="assets/img/Home Page.jpeg" alt="" />
+        </div>
+    </section>
+
+
+
+    <!-- HERO -->
+
+    <!-- ABOUT -->
+    <section id="about" class="container flex-center flex-column">
+      <h5 class="section-subheading">Join us at Fly Your Tech</h5>
+      <h2 class="section-heading text-center">Where innovation meets altitude!
+      </h2>
+      <div class="features text-center">
+        <div class="feature" style="--color: #fe6786">
+          <div class="feature__icon">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <h3 class="feature__title">Empowering Your Business with Tech</h3>
+          <p class="feature__text">
+            At Fly Your Tech, we’re more than just code-we’re your co-pilots on the digital journey.
+          </p>
+        </div>
+        <div class="feature" style="--color: #5cd8a5">
+          <div class="feature__icon">
+            <i class="fas fa-briefcase"></i>
+          </div>
+          <h3 class="feature__title">Comprehensive Business Management</h3>
+          <p class="feature__text">
+            Take control of your business with a single tap. Our tailored solutions streamline operations, boost efficiency, and keep you ahead of the curve.
+          </p>
+        </div>
+        <div class="feature" style="--color: #fea95b">
+          <div class="feature__icon">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <h3 class="feature__title">Essential Analytics and Insights</h3>
+          <p class="feature__text">
+            Dive deep into critical data. Our analytics wizards transform raw numbers into actionable insights, helping you make informed decisions that drive growth.
+          </p>
+        </div>
+      </div>
+      <div class="about__details flex-center">
+        <div class="about__details-content">
+          <h1>Elevate Your Imagination</h1>
+          <p>At Fly Your Tech, we’re not just about ones and zeros; we’re about dreams and innovation.</p>
+          <p>Whether you’re a startup seeking robust software solutions or an established business looking to soar higher, we’ve got your backFrom web development to cloud services,
+            our team of tech wizards is here to make your journey smoother, faster, and more exhilarating. 
+            Buckle up, because at Fly Your Tech, we don’t just code; we take flight!</p>
+          <!-- <a href="#" class="btn btn-primary">
+            Get Started
+          </a> -->
+          <a href="#">
+            <button class="about-btn">
+              Learn More
+              <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
+                <path
+                  clip-rule="evenodd"
+                  d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+                  fill-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </a>
+        </div>
+        <div class="about__details-img">
+          <img src="assets/img/about page.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ABOUT -->
+
+    <!-- SERVICES -->
+    <section id="services" style="background: url(assets/img/services-bg.png); background-repeat: no-repeat; background-position: top; background-size: 100% 80%; ">
+      <div class="container">
+        <h5 class="section-subheading">What we do</h5>
+        <h2 class="section-heading right">Buckle up-it’s time to explore the unknown!</h2>
+        <div class="services">
+          <div class="service">
+            <div class="service__icon">
+              <img src="assets/img/squares.png" alt="" />
+            </div>
+            <h3 class="services__title">Cutting-Edge Solutions</h3>
+            <p class="service__text">
+              At Fly Your Tech, we’re not just innovators; we’re architects of transformation. 
+            </p>
+            <div class="arrow-icon">
+              <i class="fas fa-arrow-right"></i>
+            </div>
+          </div>
+          <div class="service">
+            <div class="service__icon">
+              <img src="assets/img/shopping-cart.png" alt="" />
+            </div>
+            <h3 class="services__title">Drone Delivery Integration</h3>
+            <p class="service__text">
+              Elevate logistics. Our drone experts seamlessly integrate autonomous delivery into your supply chain. From parcels to perishables, precision is our promise.
+            </p>
+            <div class="arrow-icon">
+              <i class="fas fa-arrow-right"></i>
+            </div>
+          </div>
+        
+          <div class="service">
+            <div class="service__icon">
+              <img src="assets/img/video-camera.png" alt="" />
+            </div>
+            <h3 class="services__title">Virtual Reality Training Modules</h3>
+            <p class="service__text">
+              Learning redefined. Our VR wizards create immersive simulations for employee training. From complex procedures to high-risk scenarios, we empower competence.
+            </p>
+            <div class="arrow-icon">
+              <i class="fas fa-arrow-right"></i>
+            </div>
+          </div>
+            <div class="service">
+              <div class="service__icon">
+                <img src="assets/img/headphones.png" alt="" />
+              </div>
+              <h3 class="services__title">AI Customer Service Solutions</h3>
+              <p class="services__text">
+                Conversations with finesse. Our AI gurus build intelligent chatbots that understand context, anticipate needs, and enhance customer interactions. Efficiency meets empathy.
+              </p>
+              <div class="arrow-icon">
+                <i class="fas fa-arrow-right"></i>
+              </div>
+            </div>
+            <div class="service">
+              <div class="service__icon">
+                <img src="assets/img/placeholder.png" alt="" />
+              </div>
+              <h3 class="services__title">IoT Device Networking</h3>
+              <p class="service__text">
+                Connect intelligently. Our IoT engineers weave smart devices into a seamless network. Smart homes, industrial automation—your ecosystem, synchronized.
+              </p>
+              <div class="arrow-icon">
+                <i class="fas fa-arrow-right"></i>
+              </div>
+            </div>
+            <div class="service">
+              <div class="service__icon">
+                <img src="assets/img/upload.png" alt="" />
+              </div>
+              <h3 class="services__title">IoT Device Networking</h3>
+              <p class="service__text">
+                Fortify your digital stronghold. Our security mavens deploy robust protocols—encryption, intrusion detection, and threat mitigation. Trust, safeguarded.
+              </p>
+              <div class="arrow-icon">
+                <i class="fas fa-arrow-right"></i>
+              </div>
+            </div>
+          
+        </div>
+
+      </div>
+      
+    </section>
+
+
+    <!-- SERVICES -->
+
+    <!-- PROJECTS -->
+
+    <section id="projects"
+    style="
+    background: url(assets/img/projects-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    ">
+      <div class="container">
+        <h5 class="section-subheading">Innovative Tech Ventures</h5>
+        <h2 class="section-heading">Explore our visionary endeavors</h2>
+        <div class="projects">
+          <div class="project">
+            <div class="project__img">
+              <img src="assets/img/City.png" alt="" />
+            </div>
+            <div class="project__content">
+              <h3 class="project__category">Development</h3>
+              <h3 class="project__title">Eco-Driven Smart Cities</h3>
+              <p class="project__text">
+                Imagine cities where energy efficiency, waste management, and traffic flow harmonize seamlessly. Our smart city initiative integrates IoT sensors, AI analytics, and sustainable practices.
+              </p>
+              <!-- <a class="btn btn-secondary">Reduced carbon footprint, optimized urban living, and enhanced quality of life.</a> -->
+              <button class="projects-btn">Reduced carbon footprint, optimized urban living, and enhanced quality of life.</button>
+            </div>
+          </div>
+          <div class="project">
+            <div class="project__img">
+              <img src="assets/img/Quontam.png" alt="" />
+            </div>
+            <div class="project__content">
+              <h3 class="project__category">Innovation</h3>
+              <h3 class="project__title">Quantum Computing Exploration</h3>
+              <p class="project__text">
+                Quantum leaps in computation! We’re diving into quantum algorithms, qubits, and entanglement. Our research aims to solve complex problems-drug discovery, climate modeling, and cryptography.
+              </p>
+              <!-- <a class="btn btn-secondary">Revolutionizing industries, unlocking new possibilities, and accelerating scientific breakthroughs.</a> -->
+              <button class="projects-btn">Revolutionizing industries, unlocking new possibilities, and accelerating scientific breakthroughs.</button>
+            </div>
+          </div>
+          <div class="project">
+            <div class="project__img">
+              <img src="assets/img/Ai.png" alt="" />
+            </div>
+            <div class="project__content">
+              <h3 class="project__category">Innovation</h3>
+              <h3 class="project__title">AI-Driven Personalized Marketing</h3>
+              <p class="project__text">
+                Tailoring experiences. Our AI algorithms analyze user behavior, predict preferences, and deliver hyper-targeted marketing content. From recommendation engines to dynamic pricing, it’s all about enhancing customer engagement.
+              </p>
+              <!-- <a href="#" class="btn btn-secondary">Increased conversion rates, customer satisfaction, and brand loyalty.</a> -->
+              <button class="projects-btn">Increased conversion rates, customer satisfaction, and brand loyalty.</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <!-- PROJECTS -->
+
+    <!-- TEAM -->
+
+    <!-- <section id="team" class="container">
+      <h5 class="section-subheading text-center">
+        Meet our team
+      </h5>
+      <h2 class="section-heading text-center right left">Awesome people with great business skills</h2>
+      <div class="members">
+        <div class="member">
+          <div class="member__img">
+            <img src="assets/img/member-1.png" alt="" />
+          </div>
+          <div class="member__content">
+            <h1>John Doe</h1>
+            <p>Web Developer</p>
+          </div>
+        </div>
+        <div class="member">
+          <div class="member__img">
+            <img src="assets/img/member-2.png" alt="" />
+          </div>
+          <div class="member__content">
+            <h1>John Doe</h1>
+            <p>Web Developer</p>
+          </div>
+        </div>
+        <div class="member">
+          <div class="member__img">
+            <img src="assets/img/member-3.png" alt="" />
+          </div>
+          <div class="member__content">
+            <h1>John Doe</h1>
+            <p>Web Developer</p>
+          </div>
+        </div>
+        <div class="member">
+          <div class="member__img">
+            <img src="assets/img/member-4.png" alt="" />
+          </div>
+          <div class="member__content">
+            <h1>John Doe</h1>
+            <p>Web Developer</p>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+
+
+
+    <!-- TEAM -->
+
+    <!-- TESTIMONIALS -->
+
+    <section id="testimonial" 
+    style="background: url(assets/img/testimonials-bg.png); background-repeat: no-repeat;
+    background-position: right;
+    background-size: 100%;">
+      <div class="container flex-row">
+        <div class="testimonials-wrapper">
+          <p class="quotes">
+            <i class="fas fa-quote-left"></i>
+          </p>
+          <p class="section-subheading">Our Moto</p>
+        <div class="testimonials">
+          <div class="testimonial">
+            <h1 class="testimonial__title">
+              Navigating Tomorrow’s Horizons, Today
+            </h1>
+            <p class="testimonial__text">
+              In the ever-evolving tech landscape, Fly Your Tech embodies proactive navigation. “Tomorrow’s Horizons” symbolize uncharted possibilities—we explore them today. Our projects bridge theory and action, steering businesses toward progress. As captains of innovation, we chart a brighter future now.
+            </p>
+            <div class="testimonial__author">
+              <h3>Anis Mondal</h3>
+              <p>Creator</p>
+            </div>
+          </div>
+          </div>
+          <div class="testimonial-navigation">
+            <span class="active"></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      <div class="testimonials__img">
+        <img src="assets/img/FYT Company.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+
+    <!-- TESTIMONIALS -->
+
+    <!-- CONTACT -->
+
+    <section id="contact"
+    style="
+      background: url(assets/img/contact-bg.png);
+      background-repeat: non-repeat;
+      background-position: right;
+      background-size: contain;
+    ">
+      <div class="container">
+        <h5 class="section-subheading text-center">Contact Us</h5>
+        <h2 class="section-heading text-center left right">Get in Touch with Fly Your Tech</h2>
+        <div class="contact">
+          <form action="" class="contact__form" id="contactForm">
+            <h1>Write us a message</h1>
+            <input type="text" id="name" placeholder="Your Name | We’d love to know who’s reaching out." required>
+            <input type="email" id="emailid" placeholder="Your Email | The digital pigeonhole where our response will find you." required>
+            <input type="text" id="subject" placeholder="Subject | Summarize your message-what’s on your mind?" required>
+            <textarea rows="5" id="msgContent" placeholder="Pour your thoughts, inquiries, or futuristic visions into this space." required></textarea>
+            <!-- <button class="btn btn-primary">Send Message</button> -->
+            <button class="contact-btn" id="submit">
+              <div class="svg-wrapper-1">
+                <div class="svg-wrapper">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                    <path fill="currentColor" d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
+                  </svg>
+                </div>
+              </div>
+              <span>Send Message</span>
+            </button>
+          </form>
+          <div class="contact__details">
+            <p class="text">Have questions, ideas, or tech dreams you want to discuss? We’re all ears! Reach out to us using the form below. Whether it’s a collaboration proposal, a query about our services, or just a friendly hello, we’re here to connect. Let’s navigate tomorrow’s horizons together!</p>
+            <div class="details">
+              <div class="detail">
+                <div class="detail__icon">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <div class="detail__content">
+                  <h3>Phone</h3>
+                  <p>+123456789</p>
+                </div>
+              </div>
+              <div class="detail">
+                <div class="detail__icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="detail__content">
+                  <h3>Email</h3>
+                  <p>support@gmail.com</p>
+                </div>
+              </div>
+              <div class="detail">
+                <div class="detail__icon">
+                  <i class="fas fa-cloud"></i>
+                </div>
+                <div class="detail__content">
+                  <h3>Address</h3>
+                  <p>Into The Sky</p>
+                </div>
+              </div>
+          </div>
+        </div>
+
+        
+      </div>
+    </section>
+
+
+    <!-- CONTACT -->
+
+    <!-- FOOTER -->
+
+    <footer>
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__details">
+            <div class="footer__logo">
+              <img src="assets/img/fyt-logo.png" alt="logo">
+            </div>
+            <p class="footer__text">Join the Crew Want to be part of our orbit? Apply now and let’s launch something extraordinary together.</p>
+            <div class="footer__newletter">
+              <form action="" class="footer__newsletter-form">
+                <!-- <input type="email" placeholder="Ready to ascend? Join Now" required> -->
+                <input class="footer__email" id="news-letter" type="email" autocomplete="off" name="text" placeholder="Ready to ascend?" required>
+                <button class="footer__button" id="footer-btn-submit">
+                  Join Now
+                </button>
+                <!-- <div class="icon">
+                  <i class="fa fa-envelope"></i>
+                </div> -->
+              </form>
+            </div>
+          </div>
+          <div class="footer__menu">
+            <h3 class="footer__menu-title">NaviGlide</h3>
+            <ul class="footer__menu-list">
+              <li><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact Us</a></li>
+              
+              
+            </ul>
+          </div>
+          <div class="footer__menu">
+            <h3 class="footer__menu-title">Expressways</h3>
+            <ul class="footer__menu-list">
+              <li><a href="#services">Services</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#testimonial">Moto</a></li>
+            </ul>
+          </div>
+          <div class="footer__menu">
+            <h3 class="footer__menu-title">Swift Routes</h3>
+            <ul class="footer__menu-list">
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Linkdin</a></li>
+              
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <!-- <div class="footer__bottom-icons">
+            <p>Follow Us</p>
+            <a href="#" class="Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="linkdin">
+              <i class="fab fa-linkdin"></i>
+            </a>
+          </div> -->
+          <p>&copy; 2024 Anis Mondal. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+
+
+
+
+
+    <!-- FOOTER -->
+
+    <!-- FONTAWESOME -->
+    <script src="assets/js/fontawesome.min.js"></script>
+    <!-- FONTAWESOME -->
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- AOS -->
+
+    <!-- SCRIPTS -->
+    <script src="assets/js/script.js"></script>
+    <!-- SCRIPTS -->
+
+
+    <!-- FIREBASE CDN -->
+
+    <script type="module">
+   // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-app.js";
+  import { getDatabase, ref, set, get, child } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-database.js";
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyDOWhA8goYB7X2OONwJv9PCvM5T2TcFF7U",
+    authDomain: "fyt-contact-form.firebaseapp.com",
+    databaseURL: "https://fyt-contact-form-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "fyt-contact-form",
+    storageBucket: "fyt-contact-form.appspot.com",
+    messagingSenderId: "142874336838",
+    appId: "1:142874336838:web:238fb4937f9c6ce117f447"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+
+  // get ref to database services
+  const db = getDatabase(app);
+
+  document.getElementById("submit").addEventListener('click', function(e) {
+
+    set(ref(db, 'user/' + document.getElementById("name").value),
+    {
+
+        name: document.getElementById("name").value,
+        email: document.getElementById("emailid").value,
+        subject: document.getElementById("subject").value,
+        message: document.getElementById("msgContent").value,
+
+    });
+        alert("Message Sent Successfull")
+  })
+
+  document.getElementById("footer-btn-submit").addEventListener('click', function(e) {
+    
+  //   set(ref(db, 'user/' + document.getElementById("news-letter").value),
+  //   {
+
+  //     email: document.getElementById("news-letter").value
+
+  //   });
+  //     alert("Successfully Subscribe to News Letter")
+  // })
+
+  const emailInput = document.getElementById("news-letter");
+    const email = emailInput.value.trim();
+
+    // Validate email format using a regular expression
+    const isValidEmail = /^(([^<>()[\\]\\\\.,;:\\s@\"]+(\\.[^<>()[\\]\\\\.,;:\\s@\"]+)*)|.(\".+\"))@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\])|(([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}))$/.test(email);
+
+    if (isValidEmail) {
+        // Assuming you have initialized your Firebase database (db) elsewhere in your code
+        const userRef = ref(db, 'user/' + email);
+        set(userRef, {
+            email: email
+        }).then(() => {
+            alert("Successfully subscribed to the newsletter!");
+        }).catch((error) => {
+            console.error("Error writing to Firebase:", error);
+        });
+    } else {
+        alert("Please enter a valid email address.");
+    }
+});
+
+
+
+
+
+
+
+
+
+
+  
+    </script>
+
+    <!-- FIREBASE CDN -->
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
