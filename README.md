@@ -1,3 +1,3 @@
-# FlyYourTech
+# FlyYourTech - Where innovation meets altitude!
 
-https://flyyourtech.pages.dev/#projects
+https://flyyourtech.pages.dev/
